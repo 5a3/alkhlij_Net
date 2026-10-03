@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" width="600" height="520">
+  <defs>
+    <!-- Rich Espresso & Milk Cream Gradients -->
+    <linearGradient id="coffeeBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#28170b"/>
+      <stop offset="50%" stop-color="#3b2313"/>
+      <stop offset="100%" stop-color="#54331b"/>
+    </linearGradient>
+
+    <linearGradient id="creamGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="40%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+
+    <linearGradient id="milkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f7f1e5"/>
+    </linearGradient>
+
+    <linearGradient id="warmBronzeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#8b572a"/>
+    </linearGradient>
+
+    <!-- Filters for Warm Glow & Soft Shadow -->
+    <filter id="creamShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#3b2313" flood-opacity="0.35"/>
+    </filter>
+    <filter id="goldGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Main Shield Emblem -->
+  <g filter="url(#creamShadow)">
+    <!-- Base Shield Circle -->
+    <circle cx="300" cy="200" r="160" fill="url(#coffeeBgGrad)"/>
+    
+    <!-- Outer Cream & Gold Rings -->
+    <circle cx="300" cy="200" r="152" fill="none" stroke="url(#creamGoldGrad)" stroke-width="4" opacity="0.95"/>
+    <circle cx="300" cy="200" r="142" fill="none" stroke="#e8d8c5" stroke-width="2" stroke-dasharray="6 6" opacity="0.75"/>
+
+    <!-- Internet Wi-Fi Tower Signal Arcs at Top -->
+    <g stroke="url(#creamGoldGrad)" stroke-width="6" fill="none" stroke-linecap="round" filter="url(#goldGlow)">
+      <path d="M 200 120 A 120 120 0 0 1 400 120" opacity="0.45"/>
+      <path d="M 222 138 A 95 95 0 0 1 378 138" opacity="0.75"/>
+      <path d="M 244 156 A 70 70 0 0 1 356 156" opacity="0.98"/>
+    </g>
+
+    <!-- Hotspot Signal Tower Pillar -->
+    <path d="M 296 160 L 304 160 L 306 185 L 294 185 Z" fill="#f59e0b" filter="url(#goldGlow)"/>
+    <circle cx="300" cy="160" r="6" fill="#ffffff"/>
+
+    <!-- Integrated Central Crest Plate -->
+    <rect x="170" y="185" width="260" height="115" rx="24" fill="url(#milkGrad)" stroke="#d97706" stroke-width="3" filter="url(#goldGlow)"/>
+    <rect x="176" y="191" width="248" height="103" rx="18" fill="#3b2313" opacity="0.96"/>
+
+    <!-- Embedded Arabic Text merged directly into emblem center -->
+    <text x="300" y="248" font-family="'Segoe UI', Tahoma, Arial, sans-serif" font-size="44" font-weight="900" fill="url(#creamGoldGrad)" text-anchor="middle" letter-spacing="1.5" filter="url(#goldGlow)">البشير نت</text>
+    
+    <!-- English Sub-emblem text inside crest -->
+    <text x="300" y="278" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="800" fill="#f7f1e5" text-anchor="middle" letter-spacing="4">ALBASHIR NET</text>
+
+    <!-- Signal Network Orbit Dots & Accents -->
+    <g fill="#f59e0b">
+      <circle cx="150" cy="200" r="5" fill="#fef3c7" filter="url(#goldGlow)"/>
+      <circle cx="450" cy="200" r="5" fill="#fef3c7" filter="url(#goldGlow)"/>
+      <circle cx="180" cy="245" r="3" fill="#d97706"/>
+      <circle cx="420" cy="245" r="3" fill="#d97706"/>
+    </g>
+  </g>
+
+  <!-- Title & Typography below the Emblem -->
+  <g text-anchor="middle">
+    <!-- English Network Title -->
+    <text x="300" y="415" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="900" fill="#3b2313" letter-spacing="6">ALBASHIR NET</text>
+    
+    <!-- Tagline Badge -->
+    <rect x="165" y="440" width="270" height="34" rx="17" fill="#f7f1e5" stroke="#cfae8f" stroke-width="1.5"/>
+    <text x="300" y="462" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="900" fill="#4f301b">شبكة الإنترنت والخدمات الفائقة 📶</text>
+  </g>
+</svg>

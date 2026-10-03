@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#3b2313" />
+    <title>البشير نت - تسجيل الدخول للشبكه</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=yes" name="viewport" />
+    <meta name="description"
+        content="بوابة الدخول التلقائية لشبكة البشير نت. تصفح الباقات، نقاط البيع، متابعة بيانات الكرت، والدعم الفني المباشر." />
+    <meta name="keywords" content="البشير نت, هوتسبوت, كروت إنترنت, ميكروتيك, Bashir Net, Hotspot" />
+    <meta name="author" content="البشير نت" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="البشير نت - بوابة الدخول والخدمات" />
+    <meta property="og:description" content="بوابة دخول شبكة البشير نت - إنترنت عالي السرعة وباقات مميزة." />
+    <meta property="og:image" content="img/logo.svg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="البشير نت" />
+    <meta name="twitter:description" content="بوابة دخول شبكة البشير نت - إنترنت عالي السرعة وباقات مميزة." />
+    <meta name="twitter:image" content="img/logo.svg" />
+
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
+    <link href="css/icons.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body translate="no">
+    <div class="container">
+        <div class="screen">
+            <div class="screen-content">
+                <div class="login" id="login">
+                    <div class="main-frame brand-frame compact-header">
+                        <div class="header-top-row">
+                            <!-- Center: Prominent Large Logo -->
+                            <div class="logo compact-logo" title="البشير نت"></div>
+
+                            <!-- Dates centered -->
+                            <div aria-label="التاريخ" class="brand-dates compact-dates">
+                                <span class="date-chip date-hijri"><span class="date-label">هجري:</span> <strong
+                                        id="hijriDate">-- / -- / ---- هـ</strong></span>
+                                <span class="date-chip date-gregorian"><span class="date-label">ميلادي:</span> <strong
+                                        id="gregorianDate">---- / -- / -- مـ</strong></span>
+                            </div>
+
+                            <!-- Quick contact and info actions -->
+                            <div aria-label="روابط الشبكة السريعة" class="brand-actions compact-actions-header">
+                                <a class="brand-action brand-call" href="tel:+967778203989" aria-label="اتصال"
+                                    title="اتصال">
+                                    <span class="brand-action-icon icon-phone-squared" aria-hidden="true"></span>
+                                </a>
+                                <a class="brand-action brand-whatsapp" href="https://wa.me/967778203989"
+                                    aria-label="واتساب" title="واتساب">
+                                    <span class="brand-action-icon icon-whatsapp" aria-hidden="true"></span>
+                                </a>
+                                <button class="brand-action brand-info" parent-id="network-info" type="button"
+                                    aria-label="معلومات الشبكة" title="معلومات الشبكة">
+                                    <span class="brand-action-icon icon-info-circled" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="ads-marquee-container glossy-frame">
+                        <div class="ads-track" id="adsTrack">
+                            <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="ads/ad1.svg"
+                                    alt="شبكة البشير نت - سرعات فائقة"
+                                    onerror="handleAdError(this, 'شبكة البشير نت', 'أفضل سرعات الإنترنت والميزات')"
+                                    loading="lazy" decoding="async"></button>
+                            <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="ads/ad2.svg"
+                                    alt="عروض كروت البشير - أقوى الباقات"
+                                    onerror="handleAdError(this, 'عروض كروت البشير', 'تواصل مع الدعم الفني لأي استفسار')"
+                                    loading="lazy" decoding="async"></button>
+                            <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="ads/ad3.svg"
+                                    alt="خدمة العملاء والدعم 24/7"
+                                    onerror="handleAdError(this, 'خدمة فائقة السرعة', 'البشير نت ترحب بكم دائماً')"
+                                    loading="lazy" decoding="async"></button>
+                            <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="ads/ad1.svg"
+                                    alt="شبكة البشير نت - سرعات فائقة"
+                                    onerror="handleAdError(this, 'شبكة البشير نت', 'أفضل سرعات الإنترنت والميزات')"
+                                    loading="lazy" decoding="async"></button>
+                            <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="ads/ad2.svg"
+                                    alt="عروض كروت البشير - أقوى الباقات"
+                                    onerror="handleAdError(this, 'عروض كروت البشير', 'تواصل مع الدعم الفني لأي استفسار')"
+                                    loading="lazy" decoding="async"></button>
+                            <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="ads/ad3.svg"
+                                    alt="خدمة العملاء والدعم 24/7"
+                                    onerror="handleAdError(this, 'خدمة فائقة السرعة', 'البشير نت ترحب بكم دائماً')"
+                                    loading="lazy" decoding="async"></button>
+                        </div>
+                    </div>
+
+                    <div class="news-ticker-container">
+                        <div class="news-ticker-content">
+                            <div class="news-ticker-track">
+                                <span> شبكة البشير نت ترحب بكم | نرجو استخدام خدمة الإنترنت فيما يرضي الله تعالى وفيما
+                                    ينفعك وينفع مجتمعك </span>
+                                <span> شبكة البشير نت ترحب بكم | نرجو استخدام خدمة الإنترنت فيما يرضي الله تعالى وفيما
+                                    ينفعك وينفع مجتمعك </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div aria-hidden="true" class="welcome-modal-overlay" id="adModal">
+                        <div class="ad-modal-card" role="dialog">
+                            <button class="ad-modal-close" onclick="closeAdModal()" type="button"
+                                aria-label="إغلاق">&times;</button>
+                            <div class="ad-modal-img-wrapper">
+                                <img id="adModalImg" src="" alt="معاينة الإعلان">
+                            </div>
+                            <p class="ad-modal-title" id="adModalTitle">إعلان شبكة البشير نت</p>
+                        </div>
+                    </div>
+
+                    <div class="main-frame login-frame">
+                        <div class="login-frame-title">
+                            <span class="login-frame-title-icon icon-lock-open-alt"></span>
+                            <span>بوابة الدخول</span>
+                        </div>
+                        <div class="login-form">
+                            <form name="login" onsubmit="return onLoginSubmitted()">
+                                <input name="dst" type="hidden" value="$(link-orig)" />
+                                <p class="error" id="error"></p>
+                                <input name="popup" type="hidden" value="true" />
+                                <div class="previous-card-field">
+                                    <button class="previous-card-selector previous-card-open" parent-id="previous-cards"
+                                        type="button">
+                                        <span class="previous-card-selector-icon icon-history"></span>
+                                        <span class="previous-card-selector-text">
+                                            <strong>استخدام كرت سابق</strong>
+                                            <small>اضغط لاختيار أحد آخر كرتين مستخدمين</small>
+                                        </span>
+                                        <span class="previous-card-selector-arrow icon-left-open"></span>
+                                    </button>
+                                </div>
+                                <div class="manual-entry-separator"><span>أو أدخل رقم كرت جديد</span></div>
+                                <div class="login-field speed-field-wrapper" style="display: none;">
+                                    <select class="login-input speed-select" id="speed" name="speed" speed-field="">
+                                        <option value="normal" selected="">سرعة عاليه</option>
+                                    </select>
+                                </div>
+                                <div class="login-field">
+                                    <span class="login-icon icon-user"></span>
+                                    <input autocomplete="off" class="login-input" improve-input="" name="username"
+                                        placeholder="أدخل رقم الكرت هنا" required="" rm-white-spaces=""
+                                        to-arabic-numbers="" type="text" username-field="" value="" />
+                                </div>
+                                <label>
+                                    <input name="password" placeholder="كلمة المرور" type="hidden" />
+                                </label>
+                                <button class="login-submit" enable-hot-cookie="" type="button">تسجيل الدخول</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="main-frame services-frame">
+                        <div class="services-grid">
+                            <button parent-id="price" type="button">
+                                <span class="rbtn"><span class="btnicon icon-money"></span></span>
+                                الأسعار
+                            </button>
+                            <button parent-id="sell-point" type="button">
+                                <span class="rbtn"><span class="btnicon icon-basket"></span></span>
+                                نقاط البيع
+                            </button>
+                            <button parent-id="info" type="button">
+                                <span class="rbtn"><span class="btnicon icon-info-circled"></span></span>
+                                تعليمات
+                            </button>
+                            <button parent-id="support" type="button">
+                                <span class="rbtn"><span class="btnicon icon-headphones"></span></span>
+                                الدعم الفني
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app" id="previous-cards">
+                    <p class="title">كرت سابق</p>
+                    <div class="app-bot">
+                        <p class="contact-text">اختر أحد آخر كرتين تم تسجيل الدخول بهم ليتم نقله مباشرة إلى خانة إدخال
+                            الكرت</p>
+                        <div class="previous-cards-list" id="previousCardsList"></div>
+                        <p class="previous-cards-empty" id="previousCardsEmpty">لا توجد كروت محفوظة حتى الآن</p>
+                        <div class="app-logout app-submit">رجوع</div>
+                    </div>
+                </div>
+                <div class="app" id="network-info">
+                    <p class="title">معلومات حول الشبكة</p>
+                    <div class="app-bot popup-rich-content">
+                        <div class="popup-hero">
+                            <span class="popup-hero-icon icon-wifi"></span>
+                            <div>
+                                <h3>شبكة البشير نت</h3>
+                                <p>بوابة إنترنت بالكرت صُممت لتسهيل الدخول، متابعة بيانات الكرت، والتواصل مع الدعم الفني
+                                    بسرعة ووضوح.</p>
+                            </div>
+                        </div>
+                        <div class="popup-section">
+                            <h3><span class="icon-signal"></span> نوع الخدمة</h3>
+                            <p>خدمة هوتسبوت بالكرت، يتم تسجيل الدخول برقم الكرت فقط، مع متابعة بيانات الكرت من صفحة
+                                الحالة بعد الدخول.</p>
+                        </div>
+                        <div class="popup-section">
+                            <h3><span class="icon-key"></span> خيارات الدخول المتوفرة</h3>
+                            <div class="feature-list">
+
+                                <div class="feature-item">
+                                    <span class="feature-icon icon-history"></span>
+                                    <div>
+                                        <strong>آخر كرتين</strong>
+                                        <p>يعرض آخر كرتين تم استخدامهما، وبضغطة واحدة ينتقل الرقم إلى خانة الإدخال.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon icon-user"></span>
+                                    <div>
+                                        <strong>الإدخال اليدوي</strong>
+                                        <p>يمكنك كتابة رقم الكرت يدويًا عند الحاجة، بدون مسافات أو رموز إضافية.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popup-section support-section">
+                            <h3><span class="icon-headphones"></span> الدعم والتواصل</h3>
+                            <p>للاستفسار أو المساعدة في الدخول، تواصل مع الدعم الفني عبر الاتصال أو الواتساب.</p>
+                            <div class="customer-actions compact-actions">
+                                <a class="contact-action" href="tel:+967778203989">
+                                    <span class="contact-action-icon icon-phone-squared"></span>
+                                    778203989 730019996
+                                </a>
+                                <a class="contact-action contact-whatsapp" href="https://wa.me/967778203989">
+                                    <span class="contact-action-icon icon-whatsapp"></span>
+                                    واتساب
+                                </a>
+                            </div>
+                        </div>
+                        <div class="app-logout app-submit">رجوع</div>
+                    </div>
+                </div>
+                <div class="app" id="price">
+                    <p class="title">الأسعار والباقات</p>
+                    <div class="app-bot">
+                        <div class="price-hero">
+                            <span class="price-hero-icon">★</span>
+                            <div>
+                                <h3>باقات البشير نت</h3>
+                                <p>اختر الباقة المناسبة لك حسب الرصيد والصلاحية الموضحين.</p>
+                            </div>
+                        </div>
+                        <div aria-label="قائمة الأسعار والباقات" class="price-modern-list">
+                            <div class="price-card">
+                                <div class="price-top">
+                                  <span class="price-badge">2يوم</span>
+                                    <strong>200 ريال</strong>
+                                </div>
+                                <div class="price-details">
+                                    <span><b>الرصيد</b><em>2 جيجا</em></span>
+                                   <span><b>الصلاحية</b><em>2 ايام</em></span>
+                                </div>
+                            </div>
+                            <div class="price-card">
+                                <div class="price-top">
+                                    <span class="price-badge">7ايام</span>
+                                    <strong>500 ريال</strong>
+                                </div>
+                                <div class="price-details">
+                                    <span><b>الرصيد</b><em>5 جيجا</em></span>
+                                    <span><b>الصلاحية</b><em>7 ايام</em></span>
+                                </div>
+                            </div>
+                            <div class="price-card">
+                                <div class="price-top">
+                                    <span class="price-badge">اسبوعين</span>
+                                    <strong>1000 ريال</strong>
+                                </div>
+                                <div class="price-details">
+                                    <span><b>الرصيد</b><em> 10 جيجا</em></span>
+                                    <span><b>الصلاحية</b><em>اسبوعين</em></span>
+                                </div>
+                            </div>
+                            <div class="price-card">
+                                <div class="price-top">
+                                    <span class="price-badge">30 يوم</span>
+                                    <strong>1500 ريال</strong>
+                                </div>
+                                <div class="price-details">
+                                    <span><b>الرصيد</b><em> 13 جيجا</em></span>
+                                    <span><b>الصلاحية</b><em>30 يوم</em></span>
+                                </div>
+                            </div>
+                            <div class="price-card">
+                                <div class="price-top">
+                                    <span class="price-badge">30 يوم</span>
+                                    <strong>3500 ريال</strong>
+                                </div>
+                                <div class="price-details">
+                                    <span><b>الرصيد</b><em> 28 جيجا</em></span>
+                                    <span><b>الصلاحية</b><em>30 يوم</em></span>
+                                </div>
+                            </div>
+                            <div class="price-card">
+                                <div class="price-top">
+                                    <span class="price-badge"> شهر</span>
+                                    <strong>5500 ريال</strong>
+                                </div>
+                                <div class="price-details">
+                                    <span><b>الرصيد</b><em>45 جيجا</em></span>
+                                    <span><b>الصلاحية</b><em>30 يوم</em></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-logout app-submit">رجوع</div>
+                    </div>
+                </div>
+                <div class="app" id="sell-point">
+                    <p class="title">نقاط البيع</p>
+                    <div class="app-bot popup-rich-content sell-content">
+                        <div class="popup-hero sell-hero">
+                            <span class="popup-hero-icon icon-basket"></span>
+                            <div>
+                                <h3>أماكن توفر كروت الشبكة</h3>
+                                <p>تتوفر كروت البشير نت في البقالات والنقاط المعتمدة داخل مناطق التغطية.</p>
+                            </div>
+                        </div>
+                        <div class="sell-cards">
+                            <div class="sell-card">
+                                <span class="sell-card-icon">
+                                    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                                        <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5z"/>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <strong>سوبر ماركت مجمع بن حترش</strong>
+                                </div>
+                            </div>
+                            <div class="sell-card">
+                                <span class="sell-card-icon">
+                                    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                                        <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5z"/>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <strong>بقالة رايد العديني</strong>
+                                </div>
+                            </div>
+                            <div class="sell-card">
+                                <span class="sell-card-icon">
+                                    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                                        <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5z"/>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <strong>محل تواصل - سالم باسواد</strong>
+                                </div>
+                            </div>
+                            <div class="sell-card">
+                                <span class="sell-card-icon">
+                                    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                                        <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5z"/>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <strong>محل طارق البوري للاتصالات</strong>
+                                </div>
+                            </div>
+                            <div class="sell-card">
+                                <span class="sell-card-icon">
+                                    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                                        <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5z"/>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <strong>السلام فون - خليل جوف</strong>
+                                </div>
+                            </div>
+                            <div class="sell-card">
+                                <span class="sell-card-icon">
+                                    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                                        <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5z"/>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <strong>بقالة فارس الوجيه</strong>
+                                </div>
+                            </div>
+                            <div class="sell-card">
+                                <span class="sell-card-icon">
+                                    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                                        <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5z"/>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <strong>بقالة بن سهيل</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popup-section sell-note">
+                            <h3><span class="icon-attention-circled"></span> تنبيه قبل الشراء</h3>
+                            <p>احتفظ بالكرت بعد الشراء، ولا تشارك رقمه مع أي شخص حتى لا يتم استخدامه من جهاز آخر.</p>
+                        </div>
+                        <div class="app-logout app-submit">رجوع</div>
+                    </div>
+                </div>
+                <div class="app" id="info">
+                    <p class="title">تعليمات وتنبيهات</p>
+                    <div class="app-bot popup-rich-content info-content">
+                        <div class="popup-hero alert-hero">
+                            <span class="popup-hero-icon icon-attention-circled"></span>
+                            <div>
+                                <h3>تنبيهات مهمة لاستخدام أفضل</h3>
+                                <p>اتبع الإرشادات التالية لتسجيل الدخول بسرعة، والحفاظ على رصيد الكرت، واستخدام الشبكة
+                                    بطريقة صحيحة.</p>
+                            </div>
+                        </div>
+                        <div class="notice-list">
+                            <div class="notice-item">
+                                <span class="notice-icon icon-key"></span>
+                                <div>
+                                    <strong>اكتب رقم الكرت كما هو</strong>
+                                    <p>تجنب المسافات والرموز، واكتب الرقم كاملًا قبل الضغط على تسجيل الدخول.</p>
+                                </div>
+                            </div>
+
+                            <div class="notice-item">
+                                <span class="notice-icon icon-history"></span>
+                                <div>
+                                    <strong>استخدام كرت سابق</strong>
+                                    <p>اضغط على خانة الكرت السابق، ثم اختر أحد آخر كرتين تم استخدامهما لتعبئة خانة
+                                        الإدخال مباشرة.</p>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <span class="notice-icon icon-download-cloud"></span>
+                                <div>
+                                    <strong>حافظ على رصيدك</strong>
+                                    <p>أوقف التحديثات التلقائية للتطبيقات، وانتبه لتطبيقات الفيديو لأنها تستهلك الرصيد
+                                        بسرعة.</p>
+                                </div>
+                            </div>
+                            <div class="notice-item faith-note">
+                                <span class="notice-icon icon-ok-circled"></span>
+                                <div>
+                                    <strong>استخدم الشبكة فيما يرضي الله</strong>
+                                    <p>اجعل استخدامك للإنترنت فيما ينفعك وينفع أهلك ومجتمعك، وتجنب كل ما لا يرضي الله.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <span class="notice-icon icon-headphones"></span>
+                                <div>
+                                    <strong>عند وجود مشكلة</strong>
+                                    <p>تواصل مع الدعم الفني، واذكر رقم الكرت ونوع المشكلة حتى يتم مساعدتك بسرعة.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-logout app-submit">رجوع</div>
+                    </div>
+                </div>
+                <div class="app" id="support">
+                    <p class="title">الدعم الفني</p>
+                    <div class="app-bot popup-rich-content support-content">
+                        <div class="popup-hero support-hero">
+                            <span class="popup-hero-icon icon-headphones"></span>
+                            <div>
+                                <h3>نحن هنا لمساعدتك</h3>
+                                <p>عند وجود مشكلة في تسجيل الدخول أو استخدام الكرت، تواصل مع الدعم الفني عبر الاتصال أو
+                                    الواتساب.</p>
+                            </div>
+                        </div>
+                        <div class="popup-section">
+                            <h3><span class="icon-phone-squared"></span> أرقام التواصل</h3>
+                            <p>اختر وسيلة التواصل المناسبة، واذكر رقم الكرت ونوع المشكلة لتسريع المساعدة.</p>
+                            <div class="customer-actions compact-actions">
+                                <a class="contact-action" href="tel:+967778203989">
+                                    <span class="contact-action-icon icon-phone-squared"></span>
+                                    778203989
+                                </a>
+                                <a class="contact-action contact-whatsapp" href="https://wa.me/967777490301">
+                                    <span class="contact-action-icon icon-whatsapp"></span>
+                                    واتساب
+                                </a>
+                            </div>
+                        </div>
+                        <div class="support-note">
+                            <span class="icon-info-circled"></span>
+                            <p>لا تشارك رقم الكرت إلا مع الدعم الفني المعتمد عند الحاجة.</p>
+                        </div>
+                        <div class="app-logout app-submit">رجوع</div>
+                    </div>
+                </div>
+                <div class="app" id="status">
+                    <p class="title">تم تسجيل الدخول بنجاح</p>
+                    <div class="app-bot">
+                        <a class="status-link" href="status.html">إذا لم يتم الاتصال تلقائياً اضغط هنا</a>
+
+                        <div class="data"><span>رقم الكرت :</span><span id="username">---</span></div>
+                        <div class="data"><span>التحميل المتبقي :</span><span id="remain_bytes_total">غير محدود</span>
+                        </div>
+                        <div class="data"><span>الوقت المتبقي :</span><span id="session_time_left">غير محدود</span>
+                        </div>
+                        <div class="data"><span>متصل منذ :</span><span id="uptime">---</span></div>
+                        <div aria-label="حركة بيانات الكرت" class="traffic-card">
+                            <div class="traffic-title">
+                                <span class="traffic-title-icon icon-signal"></span>
+                                <span>حركة بيانات الكرت</span>
+                            </div>
+                            <div class="traffic-grid">
+                                <div class="traffic-box traffic-download">
+                                    <span class="traffic-symbol">↓</span>
+                                    <div class="traffic-info">
+                                        <strong>التنزيل</strong>
+                                        <span dir="rtl" id="bytes_out">$(bytes-out-nice)</span>
+                                    </div>
+                                </div>
+                                <div class="traffic-box traffic-upload">
+                                    <span class="traffic-symbol">↑</span>
+                                    <div class="traffic-info">
+                                        <strong>الرفع</strong>
+                                        <span dir="rtl" id="bytes_in">$(bytes-in-nice)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="traffic-line"><span></span></div>
+                        </div>
+                        <div class="status-actions">
+                            <button class="app-submit logout-submit" clear-hot-cookie="" erase-cookie=""><span
+                                    class="button-icon icon-off"></span>تسجيل الخروج</button>
+                            <button class="app-submit service-submit" id="statusCustomerServiceButton"
+                                type="button"><span class="button-icon icon-headphones"></span>الدعم الفني</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="app" id="status-customer-service">
+                    <p class="title">الدعم الفني</p>
+                    <div class="app-bot">
+                        <p class="contact-text">للتواصل مع الدعم الفني اختر الطريقة المناسبة لك</p>
+                        <div class="customer-actions">
+                            <a class="contact-action" href="tel:+967778203989">
+                                <span class="contact-action-icon icon-phone-squared"></span>
+                                778203989
+                            </a>
+                            <a class="contact-action contact-whatsapp" href="https://wa.me/967777490301">
+                                <span class="contact-action-icon icon-whatsapp"></span>
+                                واتساب
+                            </a>
+                        </div>
+                        <div class="data"><span>رقم التواصل :</span><span dir="ltr">778203989</span></div>
+                        <button class="app-submit status-service-back" id="statusCustomerServiceBack"
+                            type="button">رجوع</button>
+                    </div>
+                </div>
+                <div class="app" id="block">
+                    <p class="title">انت محظور</p>
+                    <div class="app-bot">
+                        <p class="contact-text">لقد تم حظرك بسبب محاولات تسجيل الدخول الكثيرة الخاطئة</p>
+                        <div class="app-user"><span>بقي على فك الحظر: </span><span count-down-span=""></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/hotInImprover.min.js"></script>
+        <script src="js/hotCookie.min.js"></script>
+        <script block-time="1" enable-hot-blocker="" src="js/hotBlocker.min.js" try-count="10"></script>
+        <script link-login-only="$(link-login-only)" src="js/main.min.js"></script>
+        <script>
+            function handleAdError(img, title, subtitle) {
+                var parent = img.parentElement;
+                var fallback = document.createElement('div');
+                fallback.className = 'ad-fallback-card';
+                fallback.onclick = function () { openAdModal(fallback); };
+                fallback.innerHTML = '<span class="ad-fallback-icon icon-signal"></span><strong>' + title + '</strong><small>' + subtitle + '</small>';
+                parent.replaceChild(fallback, img);
+            }
+
+            function openAdModal(el) {
+                var modal = document.getElementById("adModal");
+                var modalImg = document.getElementById("adModalImg");
+                var modalTitle = document.getElementById("adModalTitle");
+                if (!modal || !modalImg) return;
+
+                var img = el.tagName === 'IMG' ? el : el.querySelector('img');
+                if (img) {
+                    modalImg.src = img.src;
+                    modalTitle.textContent = img.alt || "إعلان شبكة البشير نت";
+                } else {
+                    var strong = el.querySelector('strong');
+                    if (strong && modalTitle) {
+                        modalTitle.textContent = strong.textContent;
+                    }
+                }
+
+                modal.classList.add("active");
+                modal.setAttribute("aria-hidden", "false");
+            }
+
+            function closeAdModal() {
+                var modal = document.getElementById("adModal");
+                if (!modal) return;
+                modal.classList.remove("active");
+                modal.setAttribute("aria-hidden", "true");
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                var modal = document.getElementById("adModal");
+                if (modal) {
+                    modal.addEventListener("click", function (e) {
+                        if (e.target === modal) {
+                            closeAdModal();
+                        }
+                    });
+                }
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>

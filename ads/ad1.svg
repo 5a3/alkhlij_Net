@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260" width="600" height="260">
+  <defs>
+    <linearGradient id="bgBrown1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#28170b"/>
+      <stop offset="50%" stop-color="#3b2313"/>
+      <stop offset="100%" stop-color="#54331b"/>
+    </linearGradient>
+    <linearGradient id="brownAccent1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="260" rx="20" fill="url(#bgBrown1)"/>
+  
+  <path d="M0,180 Q150,120 300,170 T600,140 L600,260 L0,260 Z" fill="url(#brownAccent1)"/>
+
+  <!-- Badge -->
+  <rect x="30" y="22" width="140" height="32" rx="16" fill="#f59e0b" opacity="0.25"/>
+  <text x="100" y="43" font-family="'Segoe UI', Tahoma, Arial, sans-serif" font-size="13" font-weight="900" fill="#fef3c7" text-anchor="middle">⚡ 5G SPEED</text>
+  
+  <!-- Main Title -->
+  <text x="30" y="96" font-family="'Segoe UI', Tahoma, Arial, sans-serif" font-size="28" font-weight="900" fill="#ffffff">شبكة البشير نت</text>
+  
+  <!-- Subtitle -->
+  <text x="30" y="132" font-family="'Segoe UI', Tahoma, Arial, sans-serif" font-size="15" font-weight="700" fill="#f7f1e5">تغطية واسعة وسرعات إنترنت فضائية بدون انقطاع</text>
+
+  <!-- Action Button -->
+  <rect x="30" y="162" width="160" height="40" rx="20" fill="#d97706"/>
+  <text x="110" y="187" font-family="'Segoe UI', Tahoma, Arial, sans-serif" font-size="14" font-weight="900" fill="#28170b" text-anchor="middle">تصفح الباقات 🚀</text>
+
+  <!-- Right Internet Signal Graphic -->
+  <g transform="translate(510, 130)">
+    <circle cx="0" cy="0" r="45" fill="#f59e0b" opacity="0.2"/>
+    <path d="M-25,-15 A30 30 0 0 1 25,-15" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-15,-5 A20 20 0 0 1 15,-5" fill="none" stroke="#fef3c7" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="0" cy="12" r="6" fill="#f59e0b"/>
+  </g>
+</svg>
