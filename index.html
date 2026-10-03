@@ -3,27 +3,30 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="theme-color" content="#3b2313" />
-    <title>البشير نت - تسجيل الدخول للشبكه</title>
+    <meta name="theme-color" content="#1f2937" />
+    <title>الخليج نت - تسجيل الدخول للشبكه</title>
     <meta content="width=device-width, initial-scale=1, user-scalable=yes" name="viewport" />
     <meta name="description"
-        content="بوابة الدخول التلقائية لشبكة البشير نت. تصفح الباقات، نقاط البيع، متابعة بيانات الكرت، والدعم الفني المباشر." />
-    <meta name="keywords" content="البشير نت, هوتسبوت, كروت إنترنت, ميكروتيك, Bashir Net, Hotspot" />
-    <meta name="author" content="البشير نت" />
+        content="بوابة الدخول التلقائية لشبكة الخليج نت. تصفح الباقات، نقاط البيع، متابعة بيانات الكرت، والدعم الفني المباشر." />
+    <meta name="keywords" content="الخليج نت, هوتسبوت, كروت إنترنت, ميكروتيك, Alkhaleej Net, Hotspot" />
+    <meta name="author" content="الخليج نت" />
 
     <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="البشير نت - بوابة الدخول والخدمات" />
-    <meta property="og:description" content="بوابة دخول شبكة البشير نت - إنترنت عالي السرعة وباقات مميزة." />
+    <meta property="og:title" content="الخليج نت - بوابة الدخول والخدمات" />
+    <meta property="og:description" content="بوابة دخول شبكة الخليج نت - إنترنت عالي السرعة وباقات مميزة." />
     <meta property="og:image" content="img/logo.svg" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="البشير نت" />
-    <meta name="twitter:description" content="بوابة دخول شبكة البشير نت - إنترنت عالي السرعة وباقات مميزة." />
+    <meta name="twitter:title" content="الخليج نت" />
+    <meta name="twitter:description" content="بوابة دخول شبكة الخليج نت - إنترنت عالي السرعة وباقات مميزة." />
     <meta name="twitter:image" content="img/logo.svg" />
 
     <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&family=Readex+Pro:wght@600;700;800;900&family=Tajawal:wght@700;800;900&display=swap" rel="stylesheet">
     <link href="css/icons.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 </head>
@@ -36,7 +39,8 @@
                     <div class="main-frame brand-frame compact-header">
                         <div class="header-top-row">
                             <!-- Center: Prominent Large Logo -->
-                            <div class="logo compact-logo" title="البشير نت"></div>
+                            <div class="logo compact-logo" title="الخليج نت"></div>
+                            <h1 class="brand-name-title">الخليج نت</h1>
 
                             <!-- Dates centered -->
                             <div aria-label="التاريخ" class="brand-dates compact-dates">
@@ -68,28 +72,36 @@
                     <div class="ads-marquee-container glossy-frame">
                         <div class="ads-track" id="adsTrack">
                             <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="ads/ad1.svg"
-                                    alt="شبكة البشير نت - سرعات فائقة"
-                                    onerror="handleAdError(this, 'شبكة البشير نت', 'أفضل سرعات الإنترنت والميزات')"
+                                    alt="شبكة الخليج نت - سرعات فائقة"
+                                    onerror="handleAdError(this, 'شبكة الخليج نت', 'أفضل سرعات الإنترنت والميزات')"
                                     loading="lazy" decoding="async"></button>
                             <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="ads/ad2.svg"
-                                    alt="عروض كروت البشير - أقوى الباقات"
-                                    onerror="handleAdError(this, 'عروض كروت البشير', 'تواصل مع الدعم الفني لأي استفسار')"
+                                    alt="عروض كروت الخليج - أقوى الباقات"
+                                    onerror="handleAdError(this, 'عروض كروت الخليج', 'تواصل مع الدعم الفني لأي استفسار')"
                                     loading="lazy" decoding="async"></button>
                             <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="ads/ad3.svg"
                                     alt="خدمة العملاء والدعم 24/7"
-                                    onerror="handleAdError(this, 'خدمة فائقة السرعة', 'البشير نت ترحب بكم دائماً')"
+                                    onerror="handleAdError(this, 'خدمة فائقة السرعة', 'الخليج نت ترحب بكم دائماً')"
+                                    loading="lazy" decoding="async"></button>
+                            <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="img/ADS.jpg"
+                                    alt="فندق الخليج السياحي - خيارك الأمثل"
+                                    onerror="handleAdError(this, 'فندق الخليج السياحي', 'إقامة مريحة في قلب الطبيعة - حضرموت العبر')"
                                     loading="lazy" decoding="async"></button>
                             <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="ads/ad1.svg"
-                                    alt="شبكة البشير نت - سرعات فائقة"
-                                    onerror="handleAdError(this, 'شبكة البشير نت', 'أفضل سرعات الإنترنت والميزات')"
+                                    alt="شبكة الخليج نت - سرعات فائقة"
+                                    onerror="handleAdError(this, 'شبكة الخليج نت', 'أفضل سرعات الإنترنت والميزات')"
                                     loading="lazy" decoding="async"></button>
                             <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="ads/ad2.svg"
-                                    alt="عروض كروت البشير - أقوى الباقات"
-                                    onerror="handleAdError(this, 'عروض كروت البشير', 'تواصل مع الدعم الفني لأي استفسار')"
+                                    alt="عروض كروت الخليج - أقوى الباقات"
+                                    onerror="handleAdError(this, 'عروض كروت الخليج', 'تواصل مع الدعم الفني لأي استفسار')"
                                     loading="lazy" decoding="async"></button>
                             <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="ads/ad3.svg"
                                     alt="خدمة العملاء والدعم 24/7"
-                                    onerror="handleAdError(this, 'خدمة فائقة السرعة', 'البشير نت ترحب بكم دائماً')"
+                                    onerror="handleAdError(this, 'خدمة فائقة السرعة', 'الخليج نت ترحب بكم دائماً')"
+                                    loading="lazy" decoding="async"></button>
+                            <button type="button" class="ad-item" onclick="openAdModal(this)"><img src="img/ADS.jpg"
+                                    alt="فندق الخليج السياحي - خيارك الأمثل"
+                                    onerror="handleAdError(this, 'فندق الخليج السياحي', 'إقامة مريحة في قلب الطبيعة - حضرموت العبر')"
                                     loading="lazy" decoding="async"></button>
                         </div>
                     </div>
@@ -97,9 +109,9 @@
                     <div class="news-ticker-container">
                         <div class="news-ticker-content">
                             <div class="news-ticker-track">
-                                <span> شبكة البشير نت ترحب بكم | نرجو استخدام خدمة الإنترنت فيما يرضي الله تعالى وفيما
+                                <span> شبكة الخليج نت ترحب بكم | نرجو استخدام خدمة الإنترنت فيما يرضي الله تعالى وفيما
                                     ينفعك وينفع مجتمعك </span>
-                                <span> شبكة البشير نت ترحب بكم | نرجو استخدام خدمة الإنترنت فيما يرضي الله تعالى وفيما
+                                <span> شبكة الخليج نت ترحب بكم | نرجو استخدام خدمة الإنترنت فيما يرضي الله تعالى وفيما
                                     ينفعك وينفع مجتمعك </span>
                             </div>
                         </div>
@@ -112,7 +124,7 @@
                             <div class="ad-modal-img-wrapper">
                                 <img id="adModalImg" src="" alt="معاينة الإعلان">
                             </div>
-                            <p class="ad-modal-title" id="adModalTitle">إعلان شبكة البشير نت</p>
+                            <p class="ad-modal-title" id="adModalTitle">إعلان شبكة الخليج نت</p>
                         </div>
                     </div>
 
@@ -194,7 +206,7 @@
                         <div class="popup-hero">
                             <span class="popup-hero-icon icon-wifi"></span>
                             <div>
-                                <h3>شبكة البشير نت</h3>
+                                <h3>شبكة الخليج نت</h3>
                                 <p>بوابة إنترنت بالكرت صُممت لتسهيل الدخول، متابعة بيانات الكرت، والتواصل مع الدعم الفني
                                     بسرعة ووضوح.</p>
                             </div>
@@ -248,7 +260,7 @@
                         <div class="price-hero">
                             <span class="price-hero-icon">★</span>
                             <div>
-                                <h3>باقات البشير نت</h3>
+                                <h3>باقات الخليج نت</h3>
                                 <p>اختر الباقة المناسبة لك حسب الرصيد والصلاحية الموضحين.</p>
                             </div>
                         </div>
@@ -324,7 +336,7 @@
                             <span class="popup-hero-icon icon-basket"></span>
                             <div>
                                 <h3>أماكن توفر كروت الشبكة</h3>
-                                <p>تتوفر كروت البشير نت في البقالات والنقاط المعتمدة داخل مناطق التغطية.</p>
+                                <p>تتوفر كروت الخليج نت في البقالات والنقاط المعتمدة داخل مناطق التغطية.</p>
                             </div>
                         </div>
                         <div class="sell-cards">
@@ -587,7 +599,7 @@
                 var img = el.tagName === 'IMG' ? el : el.querySelector('img');
                 if (img) {
                     modalImg.src = img.src;
-                    modalTitle.textContent = img.alt || "إعلان شبكة البشير نت";
+                    modalTitle.textContent = img.alt || "إعلان شبكة الخليج نت";
                 } else {
                     var strong = el.querySelector('strong');
                     if (strong && modalTitle) {
